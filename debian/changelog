@@ -1,0 +1,52 @@
+node-merge-descriptors (1.0.1-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.4.1, no changes needed.
+  * Bump debhelper from old 11 to 12.
+  * Set fields Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Apply multi-arch hints.
+    + node-merge-descriptors: Add Multi-Arch: foreign.
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on nodejs.
+
+  [ lintian-brush ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+  * Declare compliance with policy 4.5.1
+  * Fix GitHub tags regex
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Mon, 08 Nov 2021 17:13:23 +0100
+
+node-merge-descriptors (1.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Add gbp.conf
+  * Add patch to update error strings in test (Closes: #918409)
+  * Declare compliance with policy 4.3.0
+  * Fix debian/copyright format url
+  * Skip tests if "nocheck" is set
+  * Add upstream/metadata file
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 15 Jan 2019 14:14:22 +0100
+
+node-merge-descriptors (1.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 19 Jan 2018 15:47:53 +0530
+
+node-merge-descriptors (0.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #744772)
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Wed, 16 Apr 2014 15:38:37 +0200

@@ -1,0 +1,34 @@
+Description: Update TypeError strings
+Author: Xavier Guimard <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/918409
+Forwarded: https://github.com/component/merge-descriptors/issues/8
+Last-Update: 2019-01-15
+
+--- a/test/merge.js
++++ b/test/merge.js
+@@ -16,21 +16,21 @@
+   describe('arguments', function () {
+     describe('dest', function () {
+       it('should be required', function () {
+-        assert.throws(merge.bind(null, undefined), 'argument dest is required')
++        assert.throws(merge.bind(null, undefined), 'TypeError: argument dest is required')
+       })
+ 
+       it('should reject null', function () {
+-        assert.throws(merge.bind(null, null), 'argument dest is required')
++        assert.throws(merge.bind(null, null), 'TypeError: argument dest is required')
+       })
+     })
+ 
+     describe('src', function () {
+       it('should be required', function () {
+-        assert.throws(merge.bind(null, {}, undefined), 'argument src is required')
++        assert.throws(merge.bind(null, {}, undefined), 'TypeError: argument src is required')
+       })
+ 
+       it('should reject null', function () {
+-        assert.throws(merge.bind(null, {}, null), 'argument dest is required')
++        assert.throws(merge.bind(null, {}, null), 'TypeError: argument dest is required')
+       })
+     })
+   })

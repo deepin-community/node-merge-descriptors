@@ -1,0 +1,1 @@
+mocha --check-leaks test/
